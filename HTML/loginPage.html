@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e6f7ff;
+        color: #004d66;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+      h2 {
+        color: #008080;
+      }
+      .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+      label {
+        font-weight: bold;
+      }
+      .input-field {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #008080;
+        border-radius: 5px;
+      }
+      .loginbtn {
+        background-color: #008080;
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .login-btn:hover {
+        background-color: #005f5f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Student Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="college-reg-number">College Registration Number:</label>
+          <input
+            type="text"
+            id="college-reg-number"
+            class="input-field"
+            name="college_reg_number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="loginbtn">Login</button>
+        </div>
+        <p>Not registered? <a href="home.html">Register here</a></p>
+      </form>
+    </div>
+  </body>
+  <script src="/js/loginPage.js"></script>
+</html>

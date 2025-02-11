@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Medical Details</title>
+    <link rel="stylesheet" href="/css/home_style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Medical Registration Form</h2>
+      <form id="medical-registration-form">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input
+            type="text"
+            id="full-name"
+            class="input-field"
+            name="full_name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            class="input-field"
+            name="age"
+            required
+            min="1"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="blood-group">Blood Group:</label>
+          <select
+            id="blood-group"
+            class="input-field"
+            name="blood_group"
+            required
+          >
+            <option value="">Select</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="NA">NA</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="college-reg-number">College Registration Number:</label>
+          <input
+            type="text"
+            id="college-reg-number"
+            class="input-field"
+            name="college_reg_number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="medications">Ongoing Medications:</label>
+          <textarea
+            id="medications"
+            class="input-field"
+            name="medications"
+            rows="3"
+            placeholder="Mention any ongoing medications..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="update-btn">Update</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="/js/profileEdit_script.js"></script>
+</html>
