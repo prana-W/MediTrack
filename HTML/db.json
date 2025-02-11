@@ -4,17 +4,10 @@
       "fullName": "Pranaw Kumar",
       "age": "18",
       "bloodGroup": "B+",
-      "rollNumber": "2024UGEE029",
+      "rollNumber": "2024ugee029",
       "currMeds": "Montair gfb",
       "id": "de36"
     },
-    {
-      "fullName": "Ranjan Ram",
-      "age": "17",
-      "bloodGroup": "B+",
-      "rollNumber": "2024UGEE021",
-      "currMeds": "None as of now. Updated!",
-      "id": "494f"
-    }
+    
   ]
 }
