@@ -18,19 +18,23 @@ async function checkStudentData(regNum) {
   }
 }
 
+//To login or to not login
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
+  //Checks if the input field is empty
   if (!regNumber.value.trim()) {
     return;
   }
 
+  //result is the promise reference- it receives a response from the server side
   const result = checkStudentData(regNumber.value);
 
   result.then((isStudentRegistered) => {
     if (!isStudentRegistered) {
       alert("Kindly register the student!");
     } else {
+      //if registered then takes the token (reg-number) and saves in the local storage
       localStorage.setItem("token", regNumber.value);
       window.location.href = "studentDetails.html";
     }

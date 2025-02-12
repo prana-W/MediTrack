@@ -1,4 +1,4 @@
-//json-server --watch db.json --port 3000
+//(code to start a local josn server - kindldy exnsure db.json is in the same directory as the location from where we are initiating the code)   json-server --watch db.json --port 3000
 
 const nameElem = document.getElementById("full-name");
 const ageElem = document.getElementById("age");
@@ -35,6 +35,7 @@ async function checkStudentData(regNum) {
   }
 }
 
+//Check if already registered or register the student data
 subBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -62,7 +63,7 @@ subBtn.addEventListener("click", (e) => {
     }
   });
 
-  //Sending the details to the local-server
+  //Sending the details of student to the server
   async function sendDetails() {
     try {
       await fetch("http://localhost:3000/users", {
