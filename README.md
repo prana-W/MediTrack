@@ -9,13 +9,13 @@
     </section>
     
 <section id="features">
-        <h2>Key Features</h2>
+        <h2>Key Features (some will be added soon!)</h2>
         <ul>
-            <li>Register students with their medical details</li>
-            <li>Edit and delete student records anytime</li>
-            <li>Doctors can access records via registration number</li>
-            <li>Paperless prescription assignment</li>
-            <li>Students can check their prescribed medicines online</li>
+            <li>Register students with their medical details.</li>
+            <li>Edit and delete student records anytime.</li>
+            <li>Doctors can access records via registration number.</li>
+            <li>Paperless prescription assignment.</li>
+            <li>Students can check their prescribed medicines online.</li>
         </ul>
     </section>
     
