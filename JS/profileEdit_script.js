@@ -58,9 +58,8 @@ updateBtn.addEventListener("click", (e) => {
       });
 
       if (response.ok) {
-        alert ('Student details updated successfully!')
+        alert("Student details updated successfully!");
       }
-
     } catch (error) {
       console.log(error);
     }
@@ -69,7 +68,57 @@ updateBtn.addEventListener("click", (e) => {
   updateUser();
 });
 
-document.getElementById('getBack').addEventListener ('click', (e) => {
-  e.preventDefault()
-  window.location.href = "/html/studentDetails.html"
-})
+document.getElementById("getBack").addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = "/html/studentDetails.html";
+});
+
+document.getElementById("delData").addEventListener("click", (e) => {
+  e.preventDefault();
+  openModal();
+});
+
+document.getElementById("confirmDel").addEventListener("click", (e) => {
+  e.preventDefault();
+  confirmDelete();
+});
+
+document.getElementById("rejectDel").addEventListener("click", (e) => {
+  closeModal();
+});
+
+function openModal() {
+  document.getElementById("custom-modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("custom-modal").style.display = "none";
+}
+
+function confirmDelete() {
+  if (!rollElem.value) {
+    alert("No student data found to be deleted!");
+    closeModal();
+    return;
+  }
+  async function deleteUser(studentId) {
+    try {
+      let response = await fetch(`http://localhost:3000/users/${studentId}`, {
+        method: "DELETE",
+      });
+
+      if (response.ok) {
+        window.location.href = "loginPage.html";
+        alert("Student data deleted successfully!");
+      } else {
+        console.error("Failed to delete user");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  deleteUser(studentId);
+
+  closeModal();
+}

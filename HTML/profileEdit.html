@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit Student Details</title>
-    <link rel="stylesheet" href="/css/home_style.css" />
+    <link rel="stylesheet" href="/css/profileEdit_style.css" />
   </head>
   <body>
     <div class="form-container">
@@ -79,8 +79,15 @@
         <div class="form-group">
           <button id="getBack">Back</button>
           <button type="submit" class="update-btn">Update</button>
+          <button id="delData">Delete</button>
         </div>
       </form>
+    </div>
+
+    <div id="custom-modal">
+      <p>Are you sure you want to delete this?</p>
+      <button id="confirmDel">Yes</button>
+      <button id="rejectDel">No</button>
     </div>
   </body>
   <script src="/js/profileEdit_script.js"></script>
