@@ -4,10 +4,17 @@
       "fullName": "Pranaw Kumar",
       "age": "18",
       "bloodGroup": "B+",
-      "rollNumber": "2024ugee029",
-      "currMeds": "Montair gfb",
+      "rollNumber": "2024UGEE029",
+      "currMeds": "Montelucast 10 mg, Fexofenadin 120 mg, COD Liver Oil.",
       "id": "de36"
     },
-    
+    {
+      "fullName": "Ranjan Ram",
+      "age": "18",
+      "bloodGroup": "B+",
+      "rollNumber": "2024UGEE021",
+      "currMeds": "None as of now",
+      "id": "23f4"
+    }
   ]
 }

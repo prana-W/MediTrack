@@ -57,8 +57,10 @@ updateBtn.addEventListener("click", (e) => {
         body: JSON.stringify(newStudent),
       });
 
-      const data = await response.json();
-      console.log("User Updated:", data);
+      if (response.ok) {
+        alert ('Student details updated successfully!')
+      }
+
     } catch (error) {
       console.log(error);
     }
@@ -66,3 +68,8 @@ updateBtn.addEventListener("click", (e) => {
 
   updateUser();
 });
+
+document.getElementById('getBack').addEventListener ('click', (e) => {
+  e.preventDefault()
+  window.location.href = "/html/studentDetails.html"
+})

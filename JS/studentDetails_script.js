@@ -30,3 +30,8 @@ editBtn.addEventListener("click", (e) => {
 
   window.location.href = "profileEdit.html";
 });
+
+document.getElementById('getBack').addEventListener ('click', (e) => {
+  e.preventDefault()
+  window.location.href = "/html/loginPage.html"
+})

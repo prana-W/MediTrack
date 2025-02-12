@@ -21,6 +21,10 @@ async function checkStudentData(regNum) {
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
+  if (!regNumber.value.trim()) {
+    return;
+  }
+
   const result = checkStudentData(regNumber.value);
 
   result.then((isStudentRegistered) => {

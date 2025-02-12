@@ -37,7 +37,7 @@ p {
   margin: 10px 0;
 }
 
-.edit-btn {
+button {
   background-color: #008080;
   color: #ffffff;
   border: none;
@@ -49,6 +49,6 @@ p {
   margin-top: 10px;
 }
 
-.edit-btn:hover {
+button:hover {
   background-color: #005f5f;
 }

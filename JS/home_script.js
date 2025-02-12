@@ -1,3 +1,5 @@
+//json-server --watch db.json --port 3000
+
 const nameElem = document.getElementById("full-name");
 const ageElem = document.getElementById("age");
 const bloodElem = document.getElementById("blood-group");

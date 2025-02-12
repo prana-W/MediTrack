@@ -40,7 +40,7 @@ label {
   border-radius: 5px;
 }
 
-.submit-btn {
+button {
   background-color: #008080;
   color: #ffffff;
   border: none;
@@ -52,6 +52,6 @@ label {
   margin-bottom: 5px;
 }
 
-.submit-btn:hover {
+button:hover {
   background-color: #005f5f;
 }
